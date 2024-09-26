@@ -14,6 +14,14 @@ const material = new THREE.MeshLambertMaterial({color: '#468585', emissive: '#46
 
 const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
+///////////
+const geometry_2 = new THREE.SphereGeometry(); //radius, tube , radial-seg, tubulur-seg
+const material_2 = new THREE.MeshLambertMaterial({color: '#FF0000', emissive: '#FF000'});
+
+const cube_2 = new THREE.Mesh(geometry_2, material_2);
+cube_2.position.set(0,0,0);
+cube_2.scale.set(0.5,0.5,0.5);
+scene.add(cube_2);
 
 //Add lightning
 const light = new THREE.DirectionalLight(0x9CDBA6, 10);
